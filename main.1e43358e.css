@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #E1BEE7, #3F51B5, #03b1ff, #ff3077);
+  background-size: 400% 400%;
+  animation: colores 10s ease-in-out infinite;
+}
+
+.container {
+  padding: 80px;
+  border-radius: 40px;
+  position: relative;
+}
+.container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+  filter: blur(10px);
+  background: transparent;
+}
+
+.calculadora {
+  position: relative;
+  display: grid;
+  border-radius: 10px;
+}
+.calculadora .valor {
+  grid-column: span 4;
+  text-align: right;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  background: #E1BEE7;
+  height: 100px;
+}
+.calculadora span {
+  display: grid;
+  width: 80px;
+  height: 80px;
+  color: white;
+  background: #3F51B5;
+  place-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 25px;
+}
+.calculadora span:active {
+  background: #74ff3b;
+  color: black;
+}
+.calculadora span.limpiar {
+  grid-column: span 2;
+  width: 160px;
+  background: #ff3077;
+}
+.calculadora span.suma {
+  grid-row: span 2;
+  height: 160px;
+}
+.calculadora span.igual {
+  background: #03b1ff;
+}
+
+@keyframes colores {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 0;
+  }
+}
+
+/*# sourceMappingURL=/main.1e43358e.css.map */

@@ -38,18 +38,19 @@ body {
   border-radius: 10px;
 }
 .calculadora .valor {
+  padding: 10px;
   grid-column: span 4;
   text-align: right;
   border: none;
   outline: none;
-  font-size: 25px;
+  font-size: 30px;
   background: #E1BEE7;
   height: 100px;
 }
 .calculadora span {
   display: grid;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   color: white;
   background: #3F51B5;
   place-items: center;
@@ -63,12 +64,12 @@ body {
 }
 .calculadora span.limpiar {
   grid-column: span 2;
-  width: 160px;
+  width: 100%;
   background: #ff3077;
 }
 .calculadora span.suma {
   grid-row: span 2;
-  height: 160px;
+  height: 100%;
 }
 .calculadora span.igual {
   background: #03b1ff;
